@@ -19,19 +19,19 @@ export default function QuienesSomos() {
           </h1>
           <p className="text-l lg:text-justify text-zinc-200 p-4 font-thin">
             Gambino nace en Córdoba, fruto del trabajo de Don Alfonso Gambino y
-            su familia. Se creó como un proyecto familiar que intentaba
+            su familia. Se creó como un proyecto que intentaba
             facilitarle a los ciudadanos el acceso a carnes de calidad, quesos y
             vinos, junto con productos especialmente elaborados por la casa. El
             pequeño negocio fue mutando, a veces al borde de desaparecer, pero
-            la ilusión de la familia no lo dejó caer. Por esto es que en la
-            actualidad, el linaje Gambino sigue fabricando productos enteramente
-            caseros con la imagen de Alfonso como impulso.
+            la ilusión de sus miembros no lo dejó caer. Por esto es que en la
+            actualidad, el linaje Gambino sigue creando productos enteramente
+            caseros con la imagen de Alfonso como impulso y con una sociedad a la que deleitar con los mejores sabores artesanales.
           </p>
         </div>
         <div className="lg:w-3/12 w-90% flex justify-center items-center mx-auto mt-8 lg:mt-0">
           <img
             className="rounded-full border-white border-2 w-full"
-            alt="sahil logo"
+            alt="Logo de Gambino"
             src={gambino}
           />
         </div>
