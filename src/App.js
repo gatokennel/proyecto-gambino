@@ -1,10 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 import QuienesSomos from './components/QuienesSomos';
-
+import Navigation from './components/Navigation'
+import Header from './components/Header'
 function App() {
   return (
-    <QuienesSomos />
+    
+    <>
+      <Navigation/>
+      <Header/>
+      <QuienesSomos />
+    </>
   );
 }
 
