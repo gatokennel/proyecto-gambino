@@ -1,10 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
 import QuienesSomos from './components/QuienesSomos';
+import Carousel from './components/Carousel'
 
 function App() {
+
+
+
   return (
-    <QuienesSomos />
+    <div>
+      <QuienesSomos />
+      <Carousel />
+
+    </div>
+    
   );
 }
 

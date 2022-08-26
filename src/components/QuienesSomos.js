@@ -3,7 +3,7 @@ import gambino from "../images/gambino.png";
 
 export default function QuienesSomos() {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-100vh w-100vw">
       <div className="bg-meat h-10% flex justify-center items-center">
         <h1 className="text-white font-black uppercase p-4">
           Gambino, lo mejor y lo más fresco
