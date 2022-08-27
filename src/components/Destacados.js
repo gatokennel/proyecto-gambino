@@ -6,6 +6,7 @@ import image1 from '../assets/dcarnes.jpg'
 import image2 from '../assets/dmermeladas.jpg'
 import image3 from '../assets/dquesos.jpg'
 import image4 from '../assets/dsalsas.jpg'
+import enviosBackground from '../assets/zona-de-envios.jpg'
 
 const cards = [{
 id:1,
@@ -80,6 +81,18 @@ const Destacados = () => {
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="py-4">
+        <div style={{backgroundImage:`url(${enviosBackground})`}} className='w-full h-64 bg-cover p-16 hover:opacity-90 duration-1000'>
+            <div className="flex justify-center text-white text-center text-xl">
+	            <div class= "">
+			    {/* <h4 class="text-red-800 text-4xl pb-2 ">envios</h4> */}
+                    <h2 className="uppercase pb-4">Zonas de envíos</h2>
+                    <p className="font-bold">( Funes – Fishertoon – Roldan )</p>
+                </div>
+        	</div>	
         </div>
     </div>
 </>
