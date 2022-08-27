@@ -7,7 +7,7 @@ import gambino from "../images/gambino.png"
 const Header = () => {
     return (
         <div style={{backgroundImage:`url(${header})`}} 
-        className='w-full h-screen md:min-h-[80vh] md:mt-[100px] bg-no-repeat bg-center bg-cover'>
+        className='w-full h-screen md:min-h-[80vh] md:mt-[100px] bg-no-repeat bg-cover bg-center'>
             <div className='h-screen md:min-h-[80vh] w-full flex flex-col justify-center items-center backdrop-brightness-50  '>
                 <div className="w-11/12 h-[10vh] justify-between fixed top-6 px-[1vh] flex flex-row md:hidden">
                     <div className="text-white text-[5vh] bg-black rounded-full p-[2vh]">

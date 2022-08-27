@@ -19,7 +19,7 @@ const Navigation = () => {
             </img>
         </div>
         <div id='menu' 
-        className="w-full block flex-grow md:flex md:items-center md:w-auto font-bold">
+        className="block w-full flex-grow md:flex md:items-center md:w-auto font-bold">
             <div className="flex text-lg md:flex-grow justify-center space-x-20">
                 <a href="#responsive-header" className={NAV_ITEM}>Quienes Somos</a>
                 <a href="#responsive-header" className={NAV_ITEM}>Destacados</a>

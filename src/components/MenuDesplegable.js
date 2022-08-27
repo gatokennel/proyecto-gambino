@@ -8,7 +8,7 @@ const MenuDesplegable = () => {
     const handleClick = () => {
         setShowOptions(!showOptions)
     };
-    const NAV_ITEM_DESPLEGABLE = "text-white font-bold block px-4 py-2 text-sm hover:scale-105 hover:transition-transform"
+    const NAV_ITEM_DESPLEGABLE = "font-bold text-white block px-4 py-2 text-sm hover:scale-105 hover:transition-transform"
     return (
         
             <div className="relative inline-block text-left">
