@@ -2,7 +2,7 @@
 
 import './App.css';
 import QuienesSomos from './components/QuienesSomos';
-import Carousel from './components/Carousel'
+import Carrusel from './components/Carousel'
 import Tienda from './components/Tienda';
 import Navigation from './components/Navigation'
 import Header from './components/Header'

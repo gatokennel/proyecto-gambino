@@ -14,7 +14,7 @@ import salame from '../images/salamepimienta.jpg'
 
 
 
-const Carousel = () => {
+const Carrusel = () => {
   const slides = [vacio, peceto, matambreCerdo, bondiola, barbacoa, mostaza, chinchulin, chorizo, queso, salame]
 
   const slideNames = ['Vacío', 'Peceto', 'Matambre de cerdo', 'Bondiola', 'Barbacoa', 'Mostaza', 'Chinchulín', 'Chorizo', 'Queso Brie', 'Salame a la pimienta']
@@ -56,12 +56,12 @@ const Carousel = () => {
   return (
     <div>
       <div className="w-full h-20vh flex items-center justify-center bg-black">
-        <h2 className="uppercase text-2xl text-white font-black">Algunos de nuestros productos</h2>
+        <h2 className="uppercase text-center text-xl lg:text-2xl text-white font-black">Algunos de nuestros productos</h2>
       </div>
-      <div className='w-100vw h-100vh bg-black flex justify-center relative items-center'>
+      <div className='w-100vw h-70vh bg-black flex justify-center relative items-center'>
       <div className='w-full h-full flex justify-center items-center m-auto'>
       <div className='h-full w-full bg-cover bg-center  flex justify-center items-center' style={{backgroundImage: `url(${slides[currentIndex]})`}}>
-        <div className="w-full h-full bg-black text-white flex justify-center items-center text-3xl  bg-opacity-50 font-black">
+        <div className="w-full h-full bg-black text-white flex justify-center items-center text-2xl  bg-opacity-50 font-black">
           {slideNames[currentIndex]}
         </div>
       </div>
@@ -88,4 +88,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Carrusel;

@@ -19,6 +19,7 @@ module.exports = {
         '40%': '40%',
         '80%': '80%',
         '70%': '70%',
+        '30%': '30%',
         '20vh': '20vh'
       },
       width: {
@@ -29,7 +30,10 @@ module.exports = {
         '40vw': '40vw',
         '20vw': '20vw',
         '100vw': '100vw',
-        '80%': '80%'
+        '80%': '80%',
+        '60%': '60%',
+        '95%': '95%',
+
       },
       backgroundImage: {
         'carneVacuna': 'url(./images/asado.jpeg)',
