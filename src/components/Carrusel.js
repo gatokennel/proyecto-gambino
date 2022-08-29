@@ -38,7 +38,7 @@ const Carrusel = () => {
     justifyContent: "center",
     position: 'absolute',
     bottom: '0.5rem',
-    left: '50%',
+
     color: 'white',
     transform: 'translate(-50%, -50%)'
   };
@@ -71,7 +71,9 @@ const Carrusel = () => {
         <div onClick={goToNext} className='absolute top-1/2  right-8 text-5xl text-white z-10 cursor-pointer'>
           ❱
         </div>
-      <div style={dotsContainerStyles}>
+      <div style={dotsContainerStyles} 
+      // className='flex justify-center absolute bottom-2 left-2/4 text-white'
+      >
         {slides.map((slide, slideIndex) => (
           <div
           style={dotStyle}

@@ -2,7 +2,7 @@
 
 import './App.css';
 import QuienesSomos from './components/QuienesSomos';
-import Carrusel from './components/Carousel'
+import Carrusel from './components/Carrusel'
 import Tienda from './components/Tienda';
 import Navigation from './components/Navigation'
 import Header from './components/Header'
@@ -18,7 +18,7 @@ function App() {
       <Header/>
     <QuienesSomos />
 
-    <Carousel />
+    <Carrusel />
 
 
 
