@@ -8,6 +8,7 @@ import image3 from '../assets/dquesos.jpg'
 import image4 from '../assets/dsalsas.jpg'
 import enviosBackground from '../assets/zona-de-envios.jpg'
 
+
 const cards = [{
 id:1,
 title: "Nuestras Carnes",
@@ -50,7 +51,7 @@ const Destacados = () => {
             Productos destacados
             </h1>
         </div >
-        <div className='bg-white'>
+        <div className='bg-black'>
             <div className="h-1/2 row center space-y-0.5 bg-black lg:hidden">
             {
                 cards.map(card =>(
@@ -69,8 +70,8 @@ const Destacados = () => {
                     ofertas especiales
                     </h1>
                 </div>
-                <div className="flex justify-center xl p-3 space-x-3">
-                    <div className="flex xl p-5 space-x-3">
+                <div className="flex justify-center p-3 ">
+                    <div className="flex xl p-1 space-x-2 xl:space-x-10 ">
                     {
                     cards.map(card =>(
                         <div className="" key={card.id}>
