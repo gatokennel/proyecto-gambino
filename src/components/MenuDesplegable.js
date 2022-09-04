@@ -4,43 +4,31 @@ import {useState} from 'react'
 import {AiOutlineMenu} from "react-icons/ai"
 
 const MenuDesplegable = () => {
-    const [showOptions, setShowOptions] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
     const handleClick = () => {
-        setShowOptions(!showOptions)
+        setShowMenu(!showMenu)
     };
-    const NAV_ITEM_DESPLEGABLE = "font-bold text-white block px-4 py-2 text-sm hover:scale-105 hover:transition-transform"
+    const NAV_ITEM_DESPLEGABLE = "font-bold text-white block px-4 py-2 text-lg hover:scale-105 hover:transition-transform"
     return (
         
             <div className="relative inline-block text-left">
                 
-                    <button 
-                    onClick={handleClick}
-                    className="p-0"
-                    type="button"
-                    id="menu-button" 
-                    aria-expanded="true" 
-                    aria-haspopup="true">
-                    <AiOutlineMenu/>
-                    </button>
+                <button 
+                onClick={handleClick}>
+                <AiOutlineMenu/>
+                </button>
                 
-                {showOptions && (<div className="origin-top-left absolute left-3 mt-5 w-56 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="bg-black rounded-md border-2 border-white">
-                        <a href="/" 
-                        className={NAV_ITEM_DESPLEGABLE} 
-                        role="menuitem" 
-                        tabindex="-1" 
-                        id="menu-item-0">Quiene Somos</a>
-                        <a href="/" 
-                        className={NAV_ITEM_DESPLEGABLE} 
-                        role="menuitem" 
-                        tabindex="-1" 
-                        id="menu-item-1">Destacados</a>
-                        <a href="/" 
-                        className={NAV_ITEM_DESPLEGABLE} 
-                        role="menuitem" 
-                        tabindex="-1" 
-                        id="menu-item-2">Tienda Online</a>
-                    </div>
+                {showMenu && (<div className="origin-left absolute mt-5 w-screen h-96 rounded-lg bg-black/50 flex flex-col justify-around">
+                    <a href="/" 
+                    className={NAV_ITEM_DESPLEGABLE} >Quiénes Somos</a>
+                    <a href="/" 
+                    className={NAV_ITEM_DESPLEGABLE}>Como Comprar</a>
+                    <a href="/" 
+                    className={NAV_ITEM_DESPLEGABLE}>Destacados</a>
+                    <a href="/" 
+                    className={NAV_ITEM_DESPLEGABLE}>Tienda Online</a>
+                    <a href="/" 
+                    className={NAV_ITEM_DESPLEGABLE}>Contacto</a>
                 </div>) }
             </div>
         

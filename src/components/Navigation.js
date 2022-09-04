@@ -22,8 +22,10 @@ const Navigation = () => {
         className="block w-full flex-grow md:flex md:items-center md:w-auto font-bold">
             <div className="flex text-lg md:flex-grow justify-center space-x-20">
                 <a href="#responsive-header" className={NAV_ITEM}>Quienes Somos</a>
+                <a href="#responsive-header" className={NAV_ITEM}>Como Comprar</a>
                 <a href="#responsive-header" className={NAV_ITEM}>Destacados</a>
                 <a href="#responsive-header" className={NAV_ITEM}>Tienda Online</a>
+                <a href="#responsive-header" className={NAV_ITEM}>Contacto</a>
             </div>
             <div style={{color: "white", fontSize:"6vh", marginRight:"25px"}}>
                 <a href="#responsive-header"><BsCart4/></a>

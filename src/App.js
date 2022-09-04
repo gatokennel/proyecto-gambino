@@ -7,6 +7,8 @@ import Tienda from './components/Tienda';
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Modal from './components/Modal';
+import Destacados from "./components/Destacados"
+
 function App() {
 
 

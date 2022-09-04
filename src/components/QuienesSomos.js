@@ -1,5 +1,5 @@
 import React from "react";
-import gambino from "../images/gambino.png";
+//import gambino from "../images/gambino.png";
 
 export default function QuienesSomos() {
   return (
