@@ -8,17 +8,17 @@ const MenuDesplegable = () => {
     const handleClick = () => {
         setShowMenu(!showMenu)
     };
-    const NAV_ITEM_DESPLEGABLE = "font-bold text-white block px-4 py-2 text-lg hover:scale-105 hover:transition-transform"
+    const NAV_ITEM_DESPLEGABLE = "w-48 font-bold text-white block px-6 py-2 text-xl bg-gray-500/20 hover:scale-105 hover:transition-transform"
     return (
         
-            <div className="relative inline-block text-left">
+            <div className="inline-block text-left">
                 
                 <button 
                 onClick={handleClick}>
                 <AiOutlineMenu/>
                 </button>
                 
-                {showMenu && (<div className="origin-left absolute mt-5 w-screen h-96 rounded-lg bg-black/50 flex flex-col justify-around">
+                {showMenu && (<div className="origin-left fixed mt-5 w-screen h-96 rounded-lg bg-black/50 flex flex-col justify-around">
                     <a href="/" 
                     className={NAV_ITEM_DESPLEGABLE} >Quiénes Somos</a>
                     <a href="/" 

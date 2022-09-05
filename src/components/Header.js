@@ -8,17 +8,17 @@ const Header = () => {
     return (
         <div style={{backgroundImage:`url(${header})`}} 
         className='w-full h-screen md:min-h-[80vh] md:mt-[100px] bg-no-repeat bg-cover bg-center'>
-            <div className='h-screen md:min-h-[80vh] w-full flex flex-col justify-center items-center backdrop-brightness-50  '>
-                <div className="w-11/12 h-[10vh] justify-between fixed top-6 px-[1vh] flex flex-row md:hidden">
+            <div className="w-11/12 h-[10vh] flex flex-row justify-between fixed z-50 top-6 left-6  md:hidden"> 
                     <div className="text-white text-[5vh] bg-black rounded-full p-[2vh]">
                         <MenuDesplegable/>
                     </div>
                     <div className="flex text-white text-[5vh] bg-black rounded-full p-[2vh]">
                         <a href="/"><BsCart4/></a>
                     </div>
-                </div>
+            </div>
+            <div className='h-screen md:min-h-[80vh] w-full flex flex-col justify-center items-center backdrop-brightness-50  '>
                 <img className="mb-5 rounded-full md:hidden" 
-                width="250wh" 
+                width="200wh" 
                 src={gambino} 
                 alt="logo">
                 </img>
