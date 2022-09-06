@@ -8,7 +8,7 @@ import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Featured from './components/Featured'
 import Modal from './components/Modal';
-import Destacados from "./components/Destacados"
+
 
 function App() {
 
@@ -21,9 +21,10 @@ function App() {
 <Navigation/>
       <Header/>
     <QuienesSomos />
+    <Modal/>
     <Featured/>
     <Carrusel />
-    <Modal/>
+    
 
 
 
