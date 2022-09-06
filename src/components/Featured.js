@@ -2,42 +2,36 @@
 
 import Card from "./Card"
 import CardLg from "./CardLg"
-import image1 from '../assets/dcarnes.jpg'
-import image2 from '../assets/dmermeladas.jpg'
-import image3 from '../assets/dquesos.jpg'
-import image4 from '../assets/dsalsas.jpg'
 import enviosBackground from '../assets/zona-de-envios.jpg'
+import asado from '../images/asado.jpeg'
+import barbacoa from '../images/barbacoa.jpg';
+import brie from '../images/brie.jpg'
+import matambrecerdo from '../images/matambrecerdo.jpg';
+
 
 
 const cards = [{
-id:1,
 title: "Nuestras Carnes",
-image: image1,
-price: 1600,
-parrafo:"'Carnes de res, ternera y cordero de la más alta calidad...'"
+image: asado,
+parrafo:"'Carnes de res de la más alta calidad...'"
 },
 {
-id:2,
-title: "Mermeladas",
-image: image2,
-price: 3000,
-parrafo:"'Pulpas puras concentradas endulzadas con Stevia...'"
-},
-{
-id:3,
-title: "Quesos",
-image: image3,
-price: 1800,
-parrafo:"'Desde los quesos artesanales, hasta los quesos ecológicos...'"
-},
-{
-id:4,
 title: "Aderezos",
-image: image4,
-price: 2400,
-parrafo:"'transformá el sabor de tus comidas...'"
+image: barbacoa,
+parrafo:"'Transformá el sabor de tus comidas...'"
+},
+{
+title: "Quesos",
+image: brie,
+parrafo:"'Desde los quesos artesanales, hasta los ecológicos...'"
+},
+{
+title: "Carne de Cerdo",
+image: matambrecerdo,
+parrafo:"'Métodos de cría más sanos, carne más saludable...'"
 }
 ]
+
 
 /*------------------ Comienzo de lo que se va a mostrar en resoluciones menores a "lg"--------------------*/
 
@@ -70,7 +64,7 @@ const Destacados = () => {
                     ofertas especiales
                     </h1>
                 </div>
-                <div className="flex justify-center p-3 ">
+                <div className="flex justify-center p-3">
                     <div className="flex xl p-1 space-x-2 xl:space-x-10 ">
                     {
                     cards.map(card =>(
@@ -85,8 +79,8 @@ const Destacados = () => {
         </div>
     </div>
     
-    <div class="py-4">
-        <div style={{backgroundImage:`url(${enviosBackground})`}} className='w-full h-64 bg-cover p-16 hover:opacity-90 duration-1000'>
+    <div class="py-1 bg-black">
+        <div style={{backgroundImage:`url(${enviosBackground})`}} className='w-full h-64 bg-cover p-16 hover:opacity-90 duration-1000 '>
             <div className="flex justify-center text-white text-center text-xl">
 	            <div class= "">
 			    {/* <h4 class="text-red-800 text-4xl pb-2 ">envios</h4> */}

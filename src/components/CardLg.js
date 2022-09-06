@@ -5,7 +5,7 @@
 const CardLg = ({title,imageSource,price,parrafo}) => {
   return (
   <figure className="w-64  bg-red-800 xl:rounded-lg drop-shadow-lg " >
-      <img className="object-cover h-[200px] xl:rounded-tl-lg xl:rounded-tr-lg" alt="Alimentos"
+      <img className="object-cover h-[220px] xl:rounded-tl-lg xl:rounded-tr-lg" alt="Alimentos"
         src={imageSource} />
           <figcaption className="h-24 px-5 py-6 text-center text-xl font-semibold">
             <h1 className="text-white">{title}</h1>

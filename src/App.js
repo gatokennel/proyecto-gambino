@@ -6,6 +6,7 @@ import Carrusel from './components/Carrusel'
 import Tienda from './components/Tienda';
 import Navigation from './components/Navigation'
 import Header from './components/Header'
+import Featured from './components/Featured'
 import Modal from './components/Modal';
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
 <Navigation/>
       <Header/>
     <QuienesSomos />
-    <Destacados/>
+    <Featured/>
     <Carrusel />
     <Modal/>
 
