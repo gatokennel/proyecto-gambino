@@ -3,7 +3,7 @@ import React from "react";
 
 export default function QuienesSomos() {
   return (
-    <div className="lg:h-100vh w-100vw bg-black">
+    <div className="lg:h-100vh w-100vw bg-black" id='quienessomos'>
       <div className="bg-meat h-10% flex bg-black justify-center items-center">
         <h1 className="text-white text-2xl font-black uppercase p-4">
           Gambino, lo mejor y lo más fresco

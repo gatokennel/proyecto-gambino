@@ -3,9 +3,9 @@ import { BsBoxArrowInRight, BsBinoculars, BsCart4, BsCartPlus, BsCursor, BsEmoji
 
 const ComoComprar = () => {
     return (
-        <body className="w-full bg-white-100">
-         <h1 className="text-4xl p-3 text-center">\ \ \ \ \ COMO COMPRAR / / / / /</h1>
-            <div className="grid grid-cols-3 gap-2 text-center place-items-center mb-10">
+        <body className="w-full bg-white-100" id='comocomprar'>
+         <h1 className="text-4xl p-3 text-center">COMO COMPRAR</h1>
+            <div className="lg:grid lg:grid-cols-3 lg:gap-2 text-center place-items-center mb-10">
                 
                 <div className='m-5'>
                     <div className='flex justify-center m-5'>
@@ -20,7 +20,7 @@ const ComoComprar = () => {
                         <BsBinoculars className='bg-red-800 p-4 rounded-lg hover:bg-red-900 hover:rounded-lg duration-200' size={90} color={'white'} />
                     </div>
                     <h1 className='font-semibold mb-2'>PASO 2</h1>
-                    <p className='text-slate-500'>Buscá la categoría del producto que querés comprar</p>
+                    <p className='text-slate-500'>Buscá la categoría del producto que querés</p>
                 </div>
 
 

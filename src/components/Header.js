@@ -6,7 +6,7 @@ import gambino from "../images/gambino.png"
 
 const Header = () => {
     return (
-        <div style={{backgroundImage:`url(${header})`}} 
+        <div style={{backgroundImage:`url(${header})`}} id='/'
         className='w-full h-screen md:min-h-[80vh] md:mt-[100px] bg-no-repeat bg-cover bg-center'>
             <div className="w-11/12 h-[10vh] flex flex-row justify-between fixed z-50 top-6 left-6  md:hidden"> 
                     <div className="text-white text-[5vh] bg-black rounded-full p-[2vh]">

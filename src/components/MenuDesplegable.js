@@ -2,12 +2,19 @@
 
 import {useState} from 'react'
 import {AiOutlineMenu} from "react-icons/ai"
+import {Link} from 'react-scroll';
 
 const MenuDesplegable = () => {
     const [showMenu, setShowMenu] = useState(false);
     const handleClick = () => {
         setShowMenu(!showMenu)
     };
+
+    const [click, setClick] = useState(false)
+    const handleeClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
+
     const NAV_ITEM_DESPLEGABLE = "w-48 font-bold text-white block px-6 py-2 text-xl bg-gray-500/20 hover:scale-105 hover:transition-transform"
     return (
         
@@ -19,16 +26,18 @@ const MenuDesplegable = () => {
                 </button>
                 
                 {showMenu && (<div className="origin-left fixed mt-5 w-screen h-96 rounded-lg bg-black/50 flex flex-col justify-around">
-                    <a href="/" 
-                    className={NAV_ITEM_DESPLEGABLE} >Quiénes Somos</a>
-                    <a href="/" 
-                    className={NAV_ITEM_DESPLEGABLE}>Como Comprar</a>
-                    <a href="/" 
-                    className={NAV_ITEM_DESPLEGABLE}>Destacados</a>
-                    <a href="/" 
-                    className={NAV_ITEM_DESPLEGABLE}>Tienda Online</a>
-                    <a href="/" 
-                    className={NAV_ITEM_DESPLEGABLE}>Contacto</a>
+                <Link to="/" spy={true} smooth={true} offset={0} duration={500} 
+                    className={NAV_ITEM_DESPLEGABLE} >Inicio</Link>
+                    <Link to="quienessomos" spy={true} smooth={true} offset={100} duration={500} 
+                    className={NAV_ITEM_DESPLEGABLE} >Quiénes Somos</Link>
+                    <Link to="destacado" spy={true} smooth={true} offset={-5} duration={500}  onClick={closeMenu}  
+                    className={NAV_ITEM_DESPLEGABLE}>Destacados</Link>
+                    <Link to="comocomprar" spy={true} smooth={true} offset={-5} duration={500}  onClick={closeMenu} 
+                    className={NAV_ITEM_DESPLEGABLE}>Como Comprar</Link>
+                    <Link to="tienda" spy={true} smooth={true} offset={10} duration={500}  onClick={closeMenu} 
+                    className={NAV_ITEM_DESPLEGABLE}>Tienda Online</Link>
+                    <Link to="contacto" spy={true} smooth={true} offset={50} duration={500}  onClick={closeMenu} 
+                    className={NAV_ITEM_DESPLEGABLE}>Contacto</Link>
                 </div>) }
             </div>
         
