@@ -3,11 +3,14 @@
 import './App.css';
 import QuienesSomos from './components/QuienesSomos';
 import Carrusel from './components/Carrusel'
-import Tienda from './components/Tienda';
+
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Featured from './components/Featured'
 import Modal from './components/Modal';
+import ComoComprar from './components/ComoComprar';
+import Contact from './components/Contact';
+import Tienda from './components/Tienda';
 
 
 function App() {
@@ -24,12 +27,9 @@ function App() {
     <Modal/>
     <Featured/>
     <Carrusel />
-    
+    <ComoComprar />
+    <Contact />
 
-
-
-    <div className='bg-blue-800 my-5 py-3 text-center text-white text-4xl'> SEGUNDA PAGINA TIENDA ONLINE </div>
-    <Tienda />
     </>
   );
 }
