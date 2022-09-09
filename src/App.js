@@ -11,6 +11,8 @@ import Modal from './components/Modal';
 import ComoComprar from './components/ComoComprar';
 import Contact from './components/Contact';
 import Tienda from './components/Tienda';
+import ShoppingCart from './components/ShoppingCart';
+import ShoppingCartLogica from './components/ShoppingCartLogica';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
 <Navigation/>
       <Header/>
     <QuienesSomos />
+    <ShoppingCart/>
+    <ShoppingCartLogica/>
     <Modal/>
     <Featured/>
     <Carrusel />
