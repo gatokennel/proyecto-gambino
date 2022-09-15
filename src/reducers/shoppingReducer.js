@@ -33,8 +33,8 @@ export function shoppingReducer(state,action) {
             } 
             : {
                 ...state,
-                 cart:[...state.cart, {...newItem, quantity : 1}]}
-           
+                cart:[...state.cart, {...newItem, quantity : 1}]}
+        
         }
         case TYPES.REMOVE_ONE_FROM_CART:{
             let itemToDelete = state.cart.find((item) => item.id === action.payload);

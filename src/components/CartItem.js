@@ -1,13 +1,14 @@
 
 import React from 'react'
-import { useState } from "react";
+// import { useState } from "react";
 
 
 const CartItem = ({data,delFromCart}) => {
-    let {id,name,price,quantity} = data
-    const [showShoppingCart1, setShowShoppingCart1] = useState(false);
-    function handleShopping1() {
-      setShowShoppingCart1(!showShoppingCart1)};
+    let {id,name,price,quantity} = data;
+
+    // const [showShoppingCart1, setShowShoppingCart1] = useState(false);
+    // function handleShopping1() {
+    //   setShowShoppingCart1(!showShoppingCart1)};
       
 return (
 
@@ -30,12 +31,12 @@ return (
                       </h3>
                       <p class="ml-4">${price*quantity}</p>
                     </div>
-                    <p class="mt-1 text-sm text-gray-500">por/kilo</p>
+                    <p class="text-gray-500">Cantidad {quantity}</p>
                   </div>
                   <div class="flex flex-1 items-end justify-between text-sm">
-                    <p class="text-gray-500">Cantidad {quantity}</p>
+                    <button onClick={()=> delFromCart(id)} type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Quitar 1</button>
                     <div class="flex">
-                      <button onClick={()=> delFromCart(id)} type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Quitar</button>
+                      <button onClick={()=> delFromCart(id,true)} type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Quitar Todo</button>
                     </div>
                   </div>
                 </div>
