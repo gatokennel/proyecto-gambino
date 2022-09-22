@@ -1,0 +1,235 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "img": "",
+            "name": "Matambre",
+            "price": 1.499,
+            "description": "matambre de ternera",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "img": "",
+            "name": "Vacio",
+            "price": 1.955,
+            "description": "Punta de vacio al vacio",
+            "categoryId": 1
+        },
+        {
+            "id": 3,
+            "img": "",
+            "name": "Nalga",
+            "price": 1.855,
+            "description": "Tapa de nalga al vacio",
+            "categoryId": 1
+        },
+        {
+            "id": 4,
+            "img": "",
+            "name": "Asado",
+            "price": 1.599,
+            "description": "Asado banderita",
+            "categoryId": 1
+        },
+        {
+            "id": 5,
+            "img": "",
+            "name": "Bife angosto",
+            "price": 1.999,
+            "description": "Bife angosto sin hueso",
+            "categoryId": 1
+        },
+        {
+            "id": 6,
+            "img": "",
+            "name": "Peceto",
+            "price": 1.899,
+            "description": "Peceto de cerdo",
+            "categoryId": 2
+        },
+        {
+            "id": 7,
+            "img": "",
+            "name": "Pechito",
+            "price": 899,
+            "description": "Pechito de cerdo",
+            "categoryId": 2
+        },
+        {
+            "id": 8,
+            "img": "",
+            "name": "Bondiola",
+            "price": 1.299,
+            "description": "Bondiola de cerdo",
+            "categoryId": 2
+        },
+        {
+            "id": 9,
+            "img": "",
+            "name": "Costillitas",
+            "price": 950,
+            "description": "Costeletas de cerdo",
+            "categoryId": 2
+        },
+        {
+            "id": 10,
+            "img": "",
+            "name": "Matambre de cerdo",
+            "price": 1.899,
+            "description": "Matambrito de cerdo",
+            "categoryId": 2
+        },
+        {
+            "id": 11,
+            "img": "",
+            "name": "Chorizo",
+            "price": 1.199,
+            "description": "Chorizo puro cerdo",
+            "categoryId": 3
+        },
+        {
+            "id": 12,
+            "img": "",
+            "name": "Morcilla",
+            "price": 899,
+            "description": "Morcilla dulce",
+            "categoryId": 3
+        },
+        {
+            "id": 13,
+            "img": "",
+            "name": "Riñon",
+            "price": 729,
+            "description": "Riñones",
+            "categoryId": 3
+        },
+        {
+            "id": 14,
+            "img": "",
+            "name": "Molleja",
+            "price": 2.499,
+            "description": "Mollejas de corazon",
+            "categoryId": 3
+        },
+        {
+            "id": 15,
+            "img": "",
+            "name": "Chinchulines",
+            "price": 719,
+            "description": "Chinchulin",
+            "categoryId": 3
+        }
+        ,
+        {
+            "id": 16,
+            "img": "",
+            "name": "Queso fresco",
+            "price": 799,
+            "description": "Queso fresco premium",
+            "categoryId": 4
+        },
+        {
+            "id": 17,
+            "img": "",
+            "name": "Brie",
+            "price": 999,
+            "description": "Queso brie premium",
+            "categoryId": 4
+        },
+        {
+            "id": 18,
+            "img": "",
+            "name": "Provoleta",
+            "price": 350,
+            "description": "Queso provoleta",
+            "categoryId": 4
+        },
+        {
+            "id": 19,
+            "img": "",
+            "name": "Salame",
+            "price": 499,
+            "description": "Salame milan fino",
+            "categoryId": 4
+        },
+        {
+            "id": 20,
+            "img": "",
+            "name": "Salame con pimienta",
+            "price": 799,
+            "description": "Salame condimentado con pimienta",
+            "categoryId": 4
+        },
+        {
+            "id": 21,
+            "img": "",
+            "name": "Barbacoa",
+            "price": 999,
+            "description": "Aderezo de barbacoa",
+            "categoryId": 5
+        },
+        {
+            "id": 22,
+            "img": "",
+            "name": "Mostaza",
+            "price": 899,
+            "description": "Aderezo de mostaza",
+            "categoryId": 5
+        },
+        {
+            "id": 23,
+            "img": "",
+            "name": "Tabasco",
+            "price": 1.099,
+            "description": "Salsa picante de tabasco",
+            "categoryId": 5
+        },
+        {
+            "id": 24,
+            "img": "",
+            "name": "Salsas de queso",
+            "price": 799,
+            "description": "salsa premium de queso",
+            "categoryId": 5
+        },
+        {
+            "id": 25,
+            "img": "",
+            "name": "Carbon",
+            "price": 699,
+            "description": "Bolsa de carbon",
+            "categoryId": 5
+        }
+
+    ],
+    "secciones":[
+        {
+            "id": "1",
+            "name": "carnes de ternera",
+            "description": "carne, ternera, vaca, novillo"
+        },
+        {
+            "id": "2",
+            "name": "carnes de cerdo",
+            "description": "carne, cerdo, chancho"
+        },
+        {
+            "id": "3",
+            "name": "Achuras y embutidos",
+            "description": "achura, chorizo, morcilla, salame"
+        },
+        {
+            "id": "4",
+            "name": "Quesos",
+            "description": "salame, queso, provoleta, picada"
+        },
+        {
+            "id": "5",
+            "name": "Productos Gourmet",
+            "description": "aderezos, condimentos, carbon, salsas"
+        }
+    ],
+    "cart":[]
+}
+
