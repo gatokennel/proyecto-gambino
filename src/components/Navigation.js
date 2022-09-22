@@ -16,12 +16,12 @@ const Navigation = () => {
     return (
         <nav className="hidden md:flex md:fixed min-h-[15vh] z-50 top-0 left-0 right-0 flex items-center justify-between flex-wrap bg-black">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
-                <button><Link to="/" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}><img className="object-cover ml-4 rounded-full"
+            <button><Link to="/" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}><img className="object-cover ml-4 rounded-full"
                     width="100"
                     height="100"
                     src={gambino}
                     alt="logo">
-                </img> </Link> </button>
+                </img></Link></button>
             </div>
             <div id='menu'
                 className="block w-full flex-grow md:flex md:items-center md:w-auto font-bold">
@@ -29,7 +29,7 @@ const Navigation = () => {
                     <button><Link to="quienessomos" spy={true} smooth={true} offset={50} duration={500} className={NAV_ITEM} onClick={closeMenu}>Quienes Somos</Link></button>
                     <button><Link to="destacado" spy={true} smooth={true} offset={-150} duration={500}  className={NAV_ITEM}  onClick={closeMenu}>Destacados</Link></button>
                     <button><Link to="comocomprar" spy={true} smooth={true} offset={-140} duration={500}  className={NAV_ITEM} onClick={closeMenu}>Como Comprar</Link></button>
-                    <a href="tienda" className={NAV_ITEM} onClick={closeMenu}>Tienda Online</a>
+                    <a href="/tienda" className={NAV_ITEM}>Tienda Online</a>
                     <button><Link to="contacto" spy={true} smooth={true} offset={-50} duration={500}  className={NAV_ITEM} onClick={closeMenu}>Contacto</Link></button>
                 </div>
                 <div style={{ color: "white", fontSize: "6vh", marginRight: "25px" }}>
