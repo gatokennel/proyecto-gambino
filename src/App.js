@@ -1,38 +1,36 @@
 
 
 import './App.css';
-import QuienesSomos from './components/QuienesSomos';
-import Carrusel from './components/Carrusel'
-
-import Navigation from './components/Navigation'
-import Header from './components/Header'
-import Featured from './components/Featured'
-import Modal from './components/Modal';
-import ComoComprar from './components/ComoComprar';
 import Contact from './components/Contact';
+import Navigation from './components/Navigation';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Rutas from './components/Rutas';
 import Tienda from './components/Tienda';
-import ShoppingCart from './components/ShoppingCart';
-import ShoppingCartLogica from './components/ShoppingCartLogica';
 
 
 function App() {
 
 
 
+
+
+
   return (
 
     <>
+ 
+      <Router>
+        <Routes>
+          <Route path="*" element={<Rutas />} />
+          <Route path="tienda" element={<Tienda />} />
+        </Routes>
+      </Router>
 
-<Navigation/>
-      <Header/>
-    <QuienesSomos />
-    <ShoppingCart/>
-    <ShoppingCartLogica/>
-    <Modal/>
-    <Featured/>
-    <Carrusel />
-    <ComoComprar />
-    <Contact />
+      <Contact />
+
+
+
+
 
     </>
   );
