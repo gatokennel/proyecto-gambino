@@ -3,7 +3,7 @@ import { BsBoxArrowInRight, BsBinoculars, BsCart4, BsCartPlus, BsCursor, BsEmoji
 
 const ComoComprar = () => {
     return (
-        <body className="w-full bg-white-100" id='comocomprar'>
+        <div className="w-full bg-white-100" id='comocomprar'>
          <h1 className="text-4xl p-3 text-center">COMO COMPRAR</h1>
             <div className="lg:grid lg:grid-cols-3 lg:gap-2 text-center place-items-center mb-10">
                 
@@ -56,7 +56,7 @@ const ComoComprar = () => {
                     <p className='text-slate-500'>¡ Que lo disfrutes !</p>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }
 
