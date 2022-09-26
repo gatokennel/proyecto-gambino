@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Rutas from './components/Rutas';
 import Tienda from './components/Tienda';
+import ShoppingCartLogica from './components/ShoppingCartLogica';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       </Router>
 
       <Contact />
+      {/* <ShoppingCartLogica /> */}
 
 
 
