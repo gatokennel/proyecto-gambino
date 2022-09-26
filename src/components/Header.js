@@ -3,6 +3,7 @@ import {BsCart4} from "react-icons/bs";
 import MenuDesplegable from "./MenuDesplegable"
 import header from "../images/header.jpg"
 import gambino from "../images/gambino.png"
+import ShoppingCartLogica from './ShoppingCartLogica';
 
 const Header = () => {
     return (
@@ -12,9 +13,9 @@ const Header = () => {
                     <div className="text-white text-[5vh] bg-black rounded-full p-[2vh]">
                         <MenuDesplegable/>
                     </div>
-                    <div className="flex text-white text-[5vh] bg-black rounded-full p-[2vh]">
-                        <a href="/"><BsCart4/></a>
-                    </div>
+                    {/* <div className="flex text-white text-[5vh] bg-black rounded-full p-[2vh]">
+                    <div><ShoppingCartLogica /></div>
+                    </div> */}
             </div>
             <div className='h-screen md:min-h-[80vh] w-full flex flex-col justify-center items-center backdrop-brightness-50  '>
                 <img className="mb-5 rounded-full md:hidden" 

@@ -34,8 +34,8 @@ const MenuDesplegable = () => {
                     className={NAV_ITEM_DESPLEGABLE}>Destacados</Link>
                     <Link to="comocomprar" spy={true} smooth={true} offset={-5} duration={500}  onClick={closeMenu} 
                     className={NAV_ITEM_DESPLEGABLE}>Como Comprar</Link>
-                    <Link to="tienda" spy={true} smooth={true} offset={10} duration={500}  onClick={closeMenu} 
-                    className={NAV_ITEM_DESPLEGABLE}>Tienda Online</Link>
+                    <a href="/tienda" spy={true} smooth={true} offset={10} duration={500}  onClick={closeMenu} 
+                    className={NAV_ITEM_DESPLEGABLE}>Tienda Online</a>
                     <Link to="contacto" spy={true} smooth={true} offset={50} duration={500}  onClick={closeMenu} 
                     className={NAV_ITEM_DESPLEGABLE}>Contacto</Link>
                 </div>) }

@@ -5,6 +5,7 @@ import { BsCart4 } from "react-icons/bs";
 import gambino from "../images/gambino.png"
 import React, { useState} from 'react';
 import {Link} from 'react-scroll';
+import ShoppingCartLogica from "./ShoppingCartLogica";
 
 
 const NavigationTienda = () => {
@@ -30,9 +31,15 @@ const NavigationTienda = () => {
                     <button><Link to="/tienda" spy={true} smooth={true} offset={-50} duration={500}  className={NAV_ITEM} onClick={closeMenu}>Tienda Online</Link></button>
                     <button><Link to="contacto" spy={true} smooth={true} offset={-50} duration={500}  className={NAV_ITEM} onClick={closeMenu}>Contacto</Link></button>
                 </div>
-                <div style={{ color: "white", fontSize: "6vh", marginRight: "25px" }}>
-                    <a href="#responsive-header"><BsCart4 /></a>
-                </div>
+                <button><Link to="/" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}><img className="object-cover mr-4 rounded-full"
+                    width="100"
+                    height="100"
+                    src={gambino}
+                    alt="logo">
+                </img></Link></button>
+                {/* <div style={{ color: "white", fontSize: "6vh", marginRight: "25px" }}>
+                    <div><ShoppingCartLogica /></div>
+                </div> */}
             </div>
         </nav>
     )

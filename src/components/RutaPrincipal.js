@@ -19,11 +19,9 @@ const RutaPrincipal = () => {
      <Navigation />
       <Header/>
     <QuienesSomos />
-    <Modal/>
     <Featured/>
     <Carrusel />
     <ComoComprar />
-    <ShoppingCartLogica />
 
     </div>
     </>
