@@ -1,0 +1,18 @@
+Para que el PROYECTO GAMBINO le funcione correctamente, debe descargar:
+
+Tailwind
+https://tailwindcss.com/
+
+React-router-dom
+npm i react-router-dom
+
+React-scroll
+npm i react-scroll
+
+Axios
+npm install axios
+
+JSON server
+npm install -g json-server
+
+Gracias y que lo disfrute !
