@@ -29,9 +29,9 @@ const Contact = () => {
         <div class="row-span-2 col-span-2 text-white">
           <h1 className='text-white text-center text-2xl pb-2'>SEGUINOS</h1>
           <div className="flex flex-nowrap flex justify-center ">
-            <a href='#' className='p-2'><FaInstagram className='hover:bg-gray-800 hover:rounded-lg hover:duration-200 duration-200' size={90} color={'white'} /></a>
-            <a href='#' className='p-3'><FaFacebook className='hover:bg-gray-800 hover:rounded-lg hover:duration-200 duration-200' size={90} color={'white'} /></a>
-            <a href='#' className='p-3'><FaTiktok className='hover:bg-gray-800 hover:rounded-lg hover:duration-200 duration-200' size={90} color={'white'} /></a>
+            <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer" className='p-2'><FaInstagram className='hover:bg-gray-800 hover:rounded-lg hover:duration-200 duration-200' size={90} color={'white'} /></a>
+            <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer" className='p-3'><FaFacebook className='hover:bg-gray-800 hover:rounded-lg hover:duration-200 duration-200' size={90} color={'white'} /></a>
+            <a href='https://www.tiktok.com/' target="_blank" rel="noopener noreferrer" className='p-3'><FaTiktok className='hover:bg-gray-800 hover:rounded-lg hover:duration-200 duration-200' size={90} color={'white'} /></a>
           </div>
         </div>
       </div>

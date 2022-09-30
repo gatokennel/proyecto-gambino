@@ -7,7 +7,7 @@ const ComoComprar = () => {
          <h1 className="text-4xl p-3 text-center">COMO COMPRAR</h1>
             <div className="lg:grid lg:grid-cols-3 lg:gap-2 text-center place-items-center mb-10">
                 
-                <div className='m-5'>
+                <div >
                     <div className='flex justify-center m-5'>
                         <BsBoxArrowInRight className='bg-red-800 p-4 rounded-lg hover:bg-red-900 hover:rounded-lg duration-200' size={90} color={'white'} />
                     </div>
@@ -15,7 +15,7 @@ const ComoComprar = () => {
                     <p className='text-slate-500'>Ingresas a la sección 'Tienda Online</p>
                 </div>
 
-                <div className='m-5'>
+                <div>
                     <div className='flex justify-center m-5'>
                         <BsBinoculars className='bg-red-800 p-4 rounded-lg hover:bg-red-900 hover:rounded-lg duration-200' size={90} color={'white'} />
                     </div>

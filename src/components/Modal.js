@@ -11,10 +11,11 @@ function Modal() {
     return (
       <div className="App">
         {!showModal && 
-          <button onClick={handleModal} id= "modal-component-container" class="bg-black w-screen text-white p-3 "> Abrir Modal
+          <button onClick={handleModal} id= "modal-component-container" class="flex items-center justify-center rounded-md border border-transparent  px-6 py-3 text-base font-medium
+          text-white shadow-sm hover:bg-green-800 "> Finalizar Compra
           </button>}
           {showModal && (
-            <div id="modal-component-container" class="fixed inset-0 z-50 "> 
+            <div id="modal-component-container  " class="fixed inset-0 z-50 "> 
               <div class = "modal-flex-container flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0" >
                 <div class="modal-bg-container fixed inset-0 bg-gray-900 bg-opacity-75">
                 </div>

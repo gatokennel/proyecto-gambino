@@ -12,12 +12,15 @@ import Quesos from './Productos/Quesos'
 import ShoppingCartLogica from './ShoppingCartLogica'
 import TiendaOnline from './TiendaOnline'
 import gambino from "../images/gambino.png"
+import HeaderTienda from './HeaderTienda'
 
 const Tienda = () => {
   return (
     <>
     <NavigationTienda />
-    <div className="w-11/12 h-[10vh] flex flex-row justify-between fixed z-50 top-6 left-6  md:hidden"> 
+    <div id='/tienda'>
+    <HeaderTienda  /></div>
+    <div className="w-11/12 h-[10vh] flex flex-row justify-between fixed z-50 top-6 left-6  md:hidden" > 
                     <div className="text-white text-[5vh] bg-black rounded-full p-[2vh]">
                         <MenuDesplegableTienda/>
                     </div>
@@ -38,14 +41,7 @@ const Tienda = () => {
     <Quesos /> */}
     {/* <div className='bg-red-800 my-5 py-3 text-center text-white text-4xl'>PRODUCTOS GOURMET</div>
     <Gourmet /> */}
-    <div className='bg-gray-800 my-5 py-3 text-center text-white text-4xl shadow-lg shadow-gray-500/50 flex flex-row justify-between ' id='/tienda'><h1 className='w-full ml-10'>TIENDA ONLINE</h1>                 
-<img className="object-cover mr-4 rounded-full"
-                    width="50"
-                    height="50"
-                    src={gambino}
-                    alt="logo">
-                </img></div>
-    <ShoppingCartLogica/>
+    <div id='carrito'><ShoppingCartLogica/></div>
     {/* </div> */}
     </>
   )

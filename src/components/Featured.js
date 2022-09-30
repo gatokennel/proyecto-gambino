@@ -40,17 +40,17 @@ const Destacados = () => {
 
 <>
     <div id='destacado'>
-        <div className="bg-red-800 flex justify-center lg:hidden">
+        <div className="bg-red-800 flex justify-center lg:hidden ">
             <h1 className="text-white font-black uppercase p-4 lg:hidden">
             Productos destacados
             </h1>
         </div >
         <div className='bg-black'>
-            <div className="h-1/2 row center space-y-0.5 bg-black lg:hidden">
+            <div className="h-1/2 row center space-y-0.5 bg-black lg:hidden ">
             {
                 cards.map(card =>(
                     <div className="" key={card.id}>
-                    <Card title={card.title} imageSource={card.image} url={card.url} parrafo={card.parrafo}/>
+                    <Card title={card.title} imageSource={card.image} url={card.url} parrafo={card.parrafo} />
                     </div>
                 ))
                 }
@@ -61,7 +61,7 @@ const Destacados = () => {
             <div className="hidden lg:block" id='destacado'>
                 <div className="bg-red-800 flex justify-center" id='destacado'>
                     <h1 className="text-white font-black uppercase p-4">
-                    ofertas especiales
+                    Productos destacados
                     </h1>
                 </div>
                 <div className="flex justify-center p-3">

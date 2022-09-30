@@ -55,8 +55,7 @@ const Carrusel = () => {
 
   return (
     <div>
-      <div className="w-full h-20vh flex items-center justify-center bg-black">
-        <h2 className="uppercase text-center text-xl lg:text-2xl text-white font-black">Algunos de nuestros productos</h2>
+      <div className="w-full h-5 flex items-center justify-center bg-black">
       </div>
       <div className='w-100vw h-70vh bg-black flex justify-center relative items-center'>
       <div className='w-full h-full flex justify-center items-center m-auto'>
@@ -74,7 +73,7 @@ const Carrusel = () => {
       <div style={dotsContainerStyles} 
       // className='flex justify-center absolute bottom-2 left-2/4 text-white'
       >
-        {slides.map((slide, slideIndex) => (
+        {/* {slides.map((slide, slideIndex) => (
           <div
           style={dotStyle}
           key={slideIndex}
@@ -82,7 +81,7 @@ const Carrusel = () => {
           >
             ●
           </div>
-        ))}
+        ))} */}
       </div>
         </div>
     </div>

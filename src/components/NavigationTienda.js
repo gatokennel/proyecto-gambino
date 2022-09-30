@@ -28,7 +28,7 @@ const NavigationTienda = () => {
                 className="block w-full flex-grow md:flex md:items-center md:w-auto font-bold">
                 <div className="flex text-lg md:flex-grow justify-center space-x-20">
                     <a href="/" spy={true} smooth={true} offset={50} duration={500} className={NAV_ITEM} onClick={closeMenu}>Volver</a>
-                    <button><Link to="/tienda" spy={true} smooth={true} offset={-50} duration={500}  className={NAV_ITEM} onClick={closeMenu}>Tienda Online</Link></button>
+                    <button><Link to="carrito" spy={true} smooth={true} offset={-120} duration={500}  className={NAV_ITEM} onClick={closeMenu}>TIENDA ONLINE</Link></button>
                     <button><Link to="contacto" spy={true} smooth={true} offset={-50} duration={500}  className={NAV_ITEM} onClick={closeMenu}>Contacto</Link></button>
                 </div>
                 <button><Link to="/" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}><img className="object-cover mr-4 rounded-full"

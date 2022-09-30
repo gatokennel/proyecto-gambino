@@ -9,6 +9,7 @@ import { TYPES } from '../actions/shoppingAction';
 import { useState } from "react";
 import axios from 'axios';
 import { BsCart4 } from "react-icons/bs";
+import Modal from './Modal';
 
 const ShoppingCartLogica = () => {
   const [showShoppingCart1, setShowShoppingCart1] = useState(false);
@@ -16,6 +17,7 @@ const ShoppingCartLogica = () => {
   function handleShopping1() {
     setShowShoppingCart1(!showShoppingCart1)
   }
+
 
 
 
@@ -59,9 +61,9 @@ const ShoppingCartLogica = () => {
 
   return (
     <div>
-      <div className='flex justify-self-center place-content-around mt-20 mb-10 '>
+      <div className='flex justify-self-center place-content-around mt-10 mb-10 '>
         <button onClick={handleShopping1} >                <div style={{ color: "black", fontSize: "6vh", marginRight: "25px" }} >
-          <div className='flex justify-self-center place-content-around' ><button className='flex justify-self-center place-content-around px-4 py-2 bg-red-800 hover:bg-amber-600 text-center text-sm text-white rounded duration-300'>TU COMPRA <div className='ml-4 '><BsCart4 /></div></button></div>
+          <div className='flex justify-self-center place-content-around' ><button className='flex justify-self-center place-content-around px-4 py-2 bg-red-800 hover:bg-amber-600 text-center text-sm text-white rounded duration-300 text-xl'>TU COMPRA <div className='ml-4 '><BsCart4 /></div></button></div>
         </div>
         </button></div>
 
@@ -81,7 +83,7 @@ const ShoppingCartLogica = () => {
 
             <div className="z-[100]">
 
-              <div class=" pointer-events-none fixed inset-y-10 mt-12 right-0 flex max-w-full pl-10 mx-6">
+              <div class=" pointer-events-none fixed inset-y-10 mt-12 right-0 flex max-w-full pl-10 mx-6" id='tiendaonline'>
                 <div class="pointer-events-auto w-screen max-w-md">
                   <div class="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
                     <div class="flex-1 overflow-y-auto py-12 px-4 sm:px-6">
@@ -107,17 +109,17 @@ const ShoppingCartLogica = () => {
                       {/* fin - items que se van agregando*/}
                     </div>
                     <div class="border-t border-gray-200 py-6 px-4 sm:px-6">
-                      <div class="flex justify-between text-base font-medium text-gray-900">
+                      {/* <div class="flex justify-between text-base font-medium text-gray-900">
                         <p>Total</p>
                         <p><h5>$$$</h5></p>
-                      </div>
+                      </div> */}
                       <p class="mt-0.5 text-sm text-gray-500">Envíos Gratis!</p>
-                      <div class="mt-6">
+                      <div class="mt-6 ">
                         <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-black px-6 py-3 text-base font-medium
                       text-white shadow-sm hover:bg-green-800">
-                          Finalizar Compra</a>
+                        <Modal/></a>
                       </div>
-                      <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
+                      <div class="mt-6 flex justify-center text-center text-sm text-gray-500 ">
                         <p>
                           <button onClick={handleShopping1} type="button" class="font-medium text-indigo-600 hover:text-indigo-500">
                             Seguir Comprando
