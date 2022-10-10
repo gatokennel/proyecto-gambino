@@ -21,6 +21,9 @@ const Contact = () => {
             <h4 className='text-white text-3xl pb-2'>Sucursales</h4>
             <p className='text-gray-400 pb-2'>Consultá por nuestra sucursales haciendo click <a href='#' className='text-white hover:text-gray-400 duration-200'>AQUI</a></p>
           </div>
+          <div className='p-3'>
+            <p className='text-gray-400 pb-2'>CREADO POR <a href='https://github.com/gatokennel/proyecto-gambino' target="_blank" rel="noopener noreferrer" className='text-white hover:text-gray-400 duration-200'>PROYECTO GAMBINO</a></p>
+          </div>
         </div>
         <div className="col-span-2 self-center flex justify-center">
           <img className="object-cover rounded-full" width="200" height="200" src={gambino} alt="logo"></img>

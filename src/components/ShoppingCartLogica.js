@@ -57,7 +57,9 @@ const ShoppingCartLogica = () => {
     dispatch({ type: TYPES.CLEAR_CART })
   };
 
+const cartValue = cart.map(item => item.price*item.quantity)
 
+const totalPrice = cartValue.reduce((prev,current) => prev+current,0)
 
   return (
     <div>
@@ -109,10 +111,10 @@ const ShoppingCartLogica = () => {
                       {/* fin - items que se van agregando*/}
                     </div>
                     <div class="border-t border-gray-200 py-6 px-4 sm:px-6">
-                      {/* <div class="flex justify-between text-base font-medium text-gray-900">
+                      <div class="flex justify-between text-base font-medium text-gray-900">
                         <p>Total</p>
-                        <p><h5>$$$</h5></p>
-                      </div> */}
+                        <p><h5 class="font-semibold">$ {totalPrice}</h5></p>
+                      </div>
                       <p class="mt-0.5 text-sm text-gray-500">Envíos Gratis!</p>
                       <div class="mt-6 ">
                         <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-black px-6 py-3 text-base font-medium
